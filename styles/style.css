@@ -11,7 +11,6 @@ body {
 a {
   text-decoration: none;
   color: #007BFF;
-  transition: color 0.3s ease;
 }
 
 a:hover {
@@ -21,33 +20,31 @@ a:hover {
 /* Header Styles */
 header {
   background: linear-gradient(to right, #007BFF, #0056b3);
-  height: 100vh;
+  padding: 20px 0;
   color: #fff;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 
-/* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   list-style: none;
-  padding: 10px 0;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links a {
   color: #fff;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
-  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #FFD700; /* Gold hover effect */
+  color: #FFD700;
 }
 
 /* Logo */
@@ -56,6 +53,18 @@ header {
 }
 
 /* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, #007BFF, #0056b3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 15px;
@@ -63,7 +72,13 @@ header {
 
 .hero p {
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .cta-btn {
@@ -82,28 +97,12 @@ header {
   transform: scale(1.05);
 }
 
-/* Section Styles */
-section {
-  padding: 50px 20px;
-  background-color: #f4f4f4;
-}
-
-section:nth-child(even) {
-  background-color: #fff;
-}
-
-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
 /* Footer Styles */
 footer {
   background-color: #333;
-  color: #fff;
+  color: white;
+  padding: 10px 0;
   text-align: center;
-  padding: 15px 0;
-  font-size: 0.9rem;
 }
 
 /* Responsive Design */
@@ -118,10 +117,6 @@ footer {
 
   .nav-links {
     flex-direction: column;
-    gap: 15px;
-  }
-
-  .nav-links a {
-    font-size: 1rem;
+    gap: 10px;
   }
 }
