@@ -5,118 +5,39 @@ body {
   padding: 0;
   color: #333;
   line-height: 1.6;
+}
+
+/* Ensure global styles are neutral */
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: #007BFF;
-}
-
-a:hover {
-  color: #0056b3;
-}
-
-/* Header Styles */
-header {
-  background: linear-gradient(to right, #007BFF, #0056b3);
-  padding: 20px 0;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-
+/* Header and Navbar */
 .nav-links {
   display: flex;
-  gap: 20px;
+  justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 0;
+  gap: 20px;
 }
 
 .nav-links a {
   color: #fff;
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .nav-links a:hover {
   color: #FFD700;
 }
 
-/* Logo */
-.logo img {
-  width: 80px;
-}
-
-/* Hero Section */
-.hero {
-  height: 100vh;
-  background: linear-gradient(to bottom, #007BFF, #0056b3);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.cta-btn {
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  background-color: #FFD700;
-  border: none;
-  color: #333;
-  cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.cta-btn:hover {
-  background-color: #FFB800;
-  transform: scale(1.05);
-}
-
-/* Footer Styles */
+/* Footer */
 footer {
   background-color: #333;
   color: white;
-  padding: 10px 0;
   text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .cta-btn {
-    font-size: 1rem;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
+  padding: 1rem 0;
 }
