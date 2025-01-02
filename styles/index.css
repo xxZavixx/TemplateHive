@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background: linear-gradient(to right, #007BFF, #0056b3);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+}
+
+.cta-btn.primary-btn {
+  background-color: #007BFF;
+  color: white;
+}
+
+.cta-btn.secondary-btn {
+  background-color: #FFD700;
+  color: black;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+}
