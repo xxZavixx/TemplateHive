@@ -20,6 +20,7 @@ header {
   justify-content: center;
   align-items: center;
   color: white;
+  padding: 0 20px;
 }
 
 .navbar {
@@ -47,29 +48,27 @@ header {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  max-width: 600px;
 }
 
 .cta-btn {
-  padding: 12px 25px;
+  padding: 12px 20px;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
-  margin: 0 10px;
+  margin: 10px 10px;
   transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-  opacity: 0.9;
+  display: inline-block;
 }
 
 .cta-btn.primary-btn {
@@ -82,8 +81,33 @@ header {
   color: black;
 }
 
+.cta-btn:hover {
+  opacity: 0.9;
+}
+
 footer {
   background-color: #333;
   color: white;
   padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 0.9rem;
+    width: 80%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
