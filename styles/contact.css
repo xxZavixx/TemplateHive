@@ -4,69 +4,127 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header {
   background: linear-gradient(to right, #007BFF, #0056b3);
-  padding: 20px 0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .nav-links {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  gap: 20px;
   list-style: none;
 }
 
 .nav-links a {
   color: white;
-  text-transform: uppercase;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .nav-links a:hover {
   color: #FFD700;
 }
 
-section#contact {
+.hero.small-hero {
   padding: 50px 20px;
-  background-color: #f4f4f4;
 }
 
-section#contact h2 {
+.hero h1 {
   font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
-form input,
-form textarea,
-form button {
+.contact p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
   display: block;
-  width: 80%;
-  max-width: 500px;
-  margin: 10px auto;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
-form button {
+textarea {
+  resize: vertical;
+}
+
+.btn.primary-btn {
+  padding: 10px 20px;
   background-color: #007BFF;
   color: white;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-transform: uppercase;
 }
 
-form button:hover {
+.btn.primary-btn:hover {
   background-color: #0056b3;
 }
 
+/* Footer */
 footer {
   background-color: #333;
   color: white;
-  padding: 15px 0;
   text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  form {
+    width: 90%;
+  }
 }
